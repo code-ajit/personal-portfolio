@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ajit Panja - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Page Transition Overlay -->
+    <div class="page-transition"></div>
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator"></div>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Ajit<span class="highlight">Panja</span></div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active-link">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="right-nav">
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon" id="theme-icon"></i>
+                    </button>
+                    <div class="burger" id="burger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav" style="display: flex;">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span>Ajit Panja</span></h1>
+                    <h2>BCA Student & Aspiring Software Developer</h2>
+                    <p>I'm passionate about building responsive websites and learning new technologies.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary-btn">View My Work</a>
+                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="IMG-20250329-WA0003.jpg" alt="Ajit Panja">
+                </div>
+            </div>
+            
+            <!-- Scroll Down Indicator -->
+            <a href="#about" class="scroll-down-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="IMG-20250329-WA0003.jpg" alt="Ajit Panja">
+                </div>
+                <div class="about-text">
+                    <h3>Who am I?</h3>
+                    <p>I am Ajit Panja, a BCA (Bachelor of Computer Applications) student with a passion for software development. I enjoy solving complex problems and creating user-friendly experiences through code.</p>
+                    
+                    <h3>My Journey</h3>
+                    <p>Currently pursuing my BCA degree, I'm focusing on building a strong foundation in computer science fundamentals and practical programming skills. I've studied core CS and IT subjects including Computer Architecture, Operating Systems, Computer Networks, and Software Engineering. I'm continuously working on personal projects to apply what I've learned and expand my capabilities as an aspiring software developer.</p>
+                    
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-title">Name:</span>
+                            <span class="info-value">Ajit Panja</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span class="info-value">ajitpanja@example.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Education:</span>
+                            <span class="info-value">Bachelor of Computer Applications (BCA)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Location:</span>
+                            <span class="info-value">India</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn primary-btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 80%" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 75%" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 75%" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 70%" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 65%" data-width="65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 85%" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 80%" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 80%" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Operating Systems & Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-windows"></i>
+                            <span>Windows</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 90%" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 75%" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 80%" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 80%" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Development Environments & CS Knowledge</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 85%" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>IntelliJ</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 75%" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Data Structures</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 80%" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>DBMS</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 75%" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Core CS & IT Subjects</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-microchip"></i>
+                            <span>Computer Architecture</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 75%" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Computer Networks</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 70%" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Operating Systems</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 80%" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-sitemap"></i>
+                            <span>Software Engineering</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 75%" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-calculator"></i>
+                            <span>Discrete Mathematics</span>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 70%" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-color: #4dbba6;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1869/1869042.png" alt="Recipe Finder App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Recipe Finder Web App</h3>
+                        <p>An interactive web application that helps users find recipes based on available ingredients or meal types. Features include search filters, recipe saving, and responsive design.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>API Integration</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://recipe-finder-ajit.netlify.app/" class="btn small-btn" target="_blank">View Demo</a>
+                            <a href="https://recipe-finder-ajit.netlify.app/" class="btn small-btn secondary-btn" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/350x200" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>College Management System</h3>
+                        <p>A web-based system for managing student records, courses, and academic resources developed as part of my BCA curriculum.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small-btn">View Demo</a>
+                            <a href="#" class="btn small-btn secondary-btn">Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/350x200" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Student Portfolio Website</h3>
+                        <p>This personal portfolio website designed to showcase my skills and projects as a BCA student and aspiring developer.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small-btn">View Demo</a>
+                            <a href="#" class="btn small-btn secondary-btn">Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/350x200" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Quiz Application</h3>
+                        <p>An interactive quiz application with multiple categories developed during my programming coursework.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Local Storage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small-btn">View Demo</a>
+                            <a href="#" class="btn small-btn secondary-btn">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h3>Education</h3>
+                            <p>Bachelor of Computer Applications (BCA)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>ajitpanja@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 1234567890</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ajit-panja-86002127b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ajit Panja. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
